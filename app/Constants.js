@@ -126,13 +126,13 @@ export default {
       description:
         "The time it takes for the server to respond with the first byte of the response"
     },
-    TTFI: {
+    "first-cpu-idle": {
       color: [247, 81, 61],
-      name: "First Interactive",
+      name: "First CPU Idle",
       transform: value => (value / 1000).toFixed(2),
       unit: "s",
       description:
-        "This is a newer metric (TTFI) and reports when the page is first expected to be usable and will respond to input quickly (with the possibility of slow responses as more content loads)."
+        "This is a newer metric and reports when the page is first expected to be usable and will respond to input quickly (with the possibility of slow responses as more content loads)."
     },
     visualComplete: {
       color: [243, 202, 64],

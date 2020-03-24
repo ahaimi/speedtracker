@@ -76,7 +76,7 @@ class Dashboard extends React.Component {
           onClick={onClickWpt}
           metrics={[
             "firstPaint",
-            "TTFI",
+            "first-cpu-idle",
             "SpeedIndex",
             "visualComplete",
             "domInteractive"
