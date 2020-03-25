@@ -82,7 +82,7 @@ class Dashboard extends React.Component {
           ]}
           onClick={onClickWpt}
           title="Network timing"
-          yLabel="Time (seconds)"
+          yLabel="Time (milliseconds)"
         />
 
         <Section
