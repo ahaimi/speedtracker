@@ -66,6 +66,27 @@ class Dashboard extends React.Component {
 
         <Section
           {...this.props}
+          id="networkTiming"
+          footNote={
+            <span>
+              Click on a data point to see the corresponding WebPageTest result
+            </span>
+          }
+          lastResult={lastResult}
+          metrics={[
+            "dns_end",
+            "connect_ms",
+            "ssl_ms",
+            "ttfb_ms",
+            "download_ms"
+          ]}
+          onClick={onClickWpt}
+          title="Network timing"
+          yLabel="Time (seconds)"
+        />
+
+        <Section
+          {...this.props}
           id="rendering"
           footNote={
             <span>

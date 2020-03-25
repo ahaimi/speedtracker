@@ -94,9 +94,17 @@ export default {
       description:
         "The time between the initial request and the browser load event"
     },
-    firstPaint: {
+    render: {
       color: [173, 138, 100],
       name: "Start render",
+      transform: value => (value / 1000).toFixed(2),
+      unit: "s",
+      description:
+        "The Start Render time is measured as the time from the start of the initial navigation until the first non-white content is painted to the browser display."
+    },
+    firstPaint: {
+      color: [173, 138, 100],
+      name: "First paint",
       transform: value => (value / 1000).toFixed(2),
       unit: "s",
       description:
@@ -162,6 +170,38 @@ export default {
       unit: "",
       description:
         "A Progressive Web App (PWA) score defined by Google Lighthouse"
+    },
+    dns_end: {
+      color: [115, 210, 222],
+      name: "DNS lookup",
+      unit: "",
+      description: "The time it takes to perform the DNS lookup."
+    },
+    connect_ms: {
+      color: [251, 177, 60],
+      name: "Initial connection",
+      unit: "",
+      description:
+        "Time it took to establish a connection, including TCP handshakes/retries and negotiating a SSL."
+    },
+    ssl_ms: {
+      color: [33, 131, 128],
+      name: "SSL handshake",
+      unit: "",
+      description: "Time spent completing a SSL handshake."
+    },
+    ttfb_ms: {
+      color: [143, 45, 86],
+      name: "Server response",
+      unit: "",
+      description:
+        "Waiting (TTFB), latency of a round trip to the server in addition to the time spent waiting for the server to deliver the response."
+    },
+    download_ms: {
+      color: [33, 41, 92],
+      name: "Content download",
+      unit: "",
+      description: "Time spent receiving the response data."
     }
   },
 
