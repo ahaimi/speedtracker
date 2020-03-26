@@ -33,7 +33,7 @@ class Chart extends React.Component {
       });
 
       datasets.push({
-        backgroundColor: Utils.getColor(metric.color, 0.5),
+        backgroundColor: Utils.getColor(metric.color, 0.8),
         borderColor: Utils.getColor(metric.color, 1),
         borderWidth: 1,
         data: values,
