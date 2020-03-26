@@ -173,33 +173,33 @@ export default {
         "Progressive Web App (PWA) score defined by Google Lighthouse."
     },
     dns_end: {
-      color: [33, 131, 128],
+      color: [250, 121, 33],
       name: "DNS lookup",
       unit: "ms",
       description: "The time it takes to perform the DNS lookup."
     },
     connect_ms: {
-      color: [143, 45, 86],
+      color: [229, 89, 52],
       name: "Initial connection",
       unit: "ms",
       description:
         "Time it took to establish a connection, including TCP handshakes/retries and negotiating a SSL."
     },
     ssl_ms: {
-      color: [251, 177, 60],
+      color: [155, 197, 61],
       name: "SSL handshake",
       unit: "ms",
       description: "Time spent completing a SSL handshake."
     },
     ttfb_ms: {
-      color: [115, 210, 222],
+      color: [253, 231, 76],
       name: "Server response",
       unit: "ms",
       description:
         "Waiting (TTFB), latency of a round trip to the server in addition to the time spent waiting for the server to deliver the response."
     },
     download_ms: {
-      color: [33, 41, 92],
+      color: [91, 192, 235],
       name: "Content download",
       unit: "ms",
       description: "Time spent receiving the response data."
