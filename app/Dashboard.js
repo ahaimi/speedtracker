@@ -81,8 +81,8 @@ class Dashboard extends React.Component {
             "download_ms"
           ]}
           onClick={onClickWpt}
-          title="Network timing"
-          yLabel="Time (milliseconds)"
+          title="Network timing (stacked)"
+          yLabel="Incremental time (milliseconds)"
           stackedChart="true"
         />
 
@@ -149,8 +149,9 @@ class Dashboard extends React.Component {
             "breakdown.font.bytes",
             "breakdown.other.bytes"
           ]}
-          title="Content breakdown (size)"
-          yLabel="Traffic (kilobytes)"
+          title="Content breakdown (size, stacked)"
+          yLabel="Incremental traffic (kilobytes)"
+          stackedChart="true"
         />
 
         <Section
@@ -172,8 +173,9 @@ class Dashboard extends React.Component {
             "breakdown.font.requests",
             "breakdown.other.requests"
           ]}
-          title="Content breakdown (requests)"
-          yLabel="Requests"
+          title="Content breakdown (requests, stacked)"
+          yLabel="Incremental requests"
+          stackedChart="true"
         />
 
         {videoFrames.length && wptUrl && (
