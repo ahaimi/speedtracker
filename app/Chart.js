@@ -109,7 +109,8 @@ class Chart extends React.Component {
           ],
           yAxes: [
             {
-              stacked: this.props.stackedChart !== undefined,
+              //              stacked: this.props.stackedChart !== undefined,
+              stacked: true,
               ticks: {
                 beginAtZero: true,
                 max: this.props.maxValue
