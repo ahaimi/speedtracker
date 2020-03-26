@@ -158,18 +158,19 @@ export default {
       description:
         "The time it takes for the page to be fully visually populated"
     },
-    pagespeed: {
+    lighthousePerformance: {
       color: [51, 103, 214],
-      name: "PageSpeed score",
+      name: "Lighthouse performance score",
       unit: "",
-      description: "A custom metric defined by Google PageSpeed Insights"
+      description:
+        "Performance score defined by Google Lighthouse. 0 to 49 (slow), 50 to 89 (average), 90 to 100 (fast)."
     },
     lighthouse: {
       color: [121, 180, 115],
       name: "Lighthouse PWA score",
       unit: "",
       description:
-        "A Progressive Web App (PWA) score defined by Google Lighthouse"
+        "Progressive Web App (PWA) score defined by Google Lighthouse."
     },
     dns_end: {
       color: [33, 131, 128],

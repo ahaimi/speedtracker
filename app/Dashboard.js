@@ -30,9 +30,9 @@ class Dashboard extends React.Component {
       const lighthouseUrl = `https://www.webpagetest.org/lighthouse.php?test=${result.id}`;
 
       if (event.shiftKey) {
-        window.open(lighthouseUrl, "_blank");
-      } else {
         window.open(insightsUrl, "_blank");
+      } else {
+        window.open(lighthouseUrl, "_blank");
       }
     };
 
@@ -112,8 +112,8 @@ class Dashboard extends React.Component {
           id="pagespeed"
           footNote={
             <span>
-              Click on a data point to see the Google PageSpeed report.
-              Shift+Click to see the Lighthouse report.
+              Click on a data point to see the Lighthouse report. Shift+Click to
+              run Google PageSpeed test.
               <br />
               Not all WebPageTest locations support Lighthouse -{" "}
               <a href="https://speedtracker.org/blog/using-lighthouse">
@@ -124,9 +124,9 @@ class Dashboard extends React.Component {
           }
           lastResult={lastResult}
           maxValue={100}
-          metrics={["pagespeed", "lighthouse"]}
+          metrics={["lighthousePerformance", "lighthouse"]}
           onClick={onClickPagespeed}
-          title="Google PageSpeed and Lighthouse"
+          title="Google Lighthouse"
           yLabel="Score (0-100)"
         />
 
